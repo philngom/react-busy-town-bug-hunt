@@ -1,4 +1,4 @@
-export default function Vehicle(props) {
+export default function Vehicle({ vehicle }) {
   return <div className="vehicle">
     {vehicle === 'car' && '🚗'}
     {vehicle === 'truck' && '🚚'}

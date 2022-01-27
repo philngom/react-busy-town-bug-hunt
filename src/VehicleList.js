@@ -2,10 +2,11 @@ import React from 'react';
 import Vehicle from './Vehicle';
 
 export default function VehicleList(props) {
+  console.log(props);
   return (
-    <h2>Traffic</h2>
     <div className="traffic">
-      {props.vehicles.map(vehicle => <Vehicle vehicle={vehicle} />)}
+      <h2>Traffic</h2>
+      {props.vehicles.map((vehicle, i) => <Vehicle key={vehicle + i } vehicle={vehicle} />)}
     </div>
   );
 }
